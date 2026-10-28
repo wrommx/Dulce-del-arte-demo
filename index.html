@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dulce Arte: una pastelería imaginaria, un diseño para celebrar. Demo de portafolio con catálogo y cotizador interactivo.">
+  <meta name="theme-color" content="#fbf7f2">
+  <title>Dulce Arte · Pastelería de autor | Demo</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/config.js"></script>
+  <script defer src="js/data.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="demo-bar">UN PROYECTO PARA IMAGINAR <span>✦</span> Pastelería ficticia · Demo de portafolio</div>
+  <header class="header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Dulce Arte, inicio"><span class="brand-icon" aria-hidden="true">✳</span><span>Dulce Arte<small>PASTELERÍA DE AUTOR</small></span></a>
+      <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false">Menú <span aria-hidden="true">☰</span></button>
+      <nav id="navigation" aria-label="Navegación principal">
+        <a href="#catalogo">Nuestros pasteles</a><a href="#personalizados">A tu medida</a><a href="#galeria">Galería</a><a class="button button-small" href="#cotizar">Diseña tu momento <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido">
+    <section id="inicio" class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="small-line"></span> PEQUEÑOS DETALLES, GRANDES MOMENTOS</p>
+        <h1>La vida merece<br>un toque <em>dulce.</em></h1>
+        <p class="hero-description">Pasteles que imaginan historias, sabores que inspiran y detalles que hacen de cualquier día una celebración.</p>
+        <div class="hero-actions"><a class="button" href="#catalogo">Explorar el catálogo <span aria-hidden="true">↗</span></a><a class="text-link" href="#personalizados">Imagina el tuyo <span aria-hidden="true">→</span></a></div>
+        <div class="hero-note"><span class="outline-flower" aria-hidden="true">✳</span><p>Un poquito de arte.<br><strong>Un mundo de posibilidades.</strong></p></div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/hero.jpg" alt="Pastel de chocolate con rosetones y cobertura brillante, fotografía de referencia" width="1400" height="1750" fetchpriority="high">
+        <span class="image-label">LA INSPIRACIÓN DEL DÍA <span aria-hidden="true">↗</span></span>
+        <div class="hero-stamp" aria-label="Hecho para celebrar, concepto creativo">hecho para<br><em>celebrar</em><span aria-hidden="true">✧</span></div>
+        <div class="photo-caption"><span>01 / CHOCOLATE DE ENSUEÑO</span><span>Fotografía de referencia</span></div>
+      </div>
+    </section>
+    <div class="ribbon" aria-hidden="true"><span>Un antojo especial</span><b>✳</b><span>Diseños con personalidad</span><b>✳</b><span>Momentos para compartir</span><b>✳</b><span>Una dulce inspiración</span></div>
+
+    <section id="catalogo" class="section container">
+      <div class="section-heading"><div><p class="eyebrow">ELIGE TU PRÓXIMO ANTOJO</p><h2>Amor a primera <em>rebanada.</em></h2></div><p>Una colección imaginada para cada ocasión.<br>¿Cuál se parece a tu celebración?</p></div>
+      <div class="catalog-toolbar"><div class="filters" role="group" aria-label="Filtrar catálogo"><button type="button" class="filter active" data-filter="todos" aria-pressed="true">Todos</button><button type="button" class="filter" data-filter="pasteles" aria-pressed="false">Pasteles</button><button type="button" class="filter" data-filter="tartas" aria-pressed="false">Tartas</button><button type="button" class="filter" data-filter="cupcakes" aria-pressed="false">Cupcakes</button></div><span class="catalog-note">Precios ilustrativos en MXN</span></div>
+      <p id="catalog-status" class="sr-only" role="status" aria-live="polite"></p>
+      <div id="product-grid" class="product-grid"></div>
+      <noscript><p>Activa JavaScript para ver el catálogo interactivo y preparar una solicitud de ejemplo. La galería y el resto de esta página siguen disponibles.</p></noscript>
+      <p class="fine-print">Productos y precios de demostración. Las fotografías son referencias visuales, no productos de un negocio real.</p>
+    </section>
+
+    <section id="personalizados" class="custom-section">
+      <div class="container custom-grid">
+        <div class="custom-photo"><img src="assets/celebracion.jpg" alt="Pastel blanco de dos pisos decorado con frutos rojos" width="1100" height="1375" loading="lazy"><span class="photo-tag">TU IDEA, EL INGREDIENTE ESPECIAL.</span></div>
+        <div class="custom-copy"><p class="eyebrow">TAN ÚNICO COMO TU MOMENTO</p><h2>Tú lo imaginas.<br>El dulce toma <em>forma.</em></h2><p>Una paleta de colores, un sabor favorito, una ocasión especial. Explora cómo podría verse un pastel creado a tu medida.</p>
+          <ol class="steps"><li><span>01</span><div><h3>Cuéntanos qué celebras</h3><p>Un cumpleaños, una boda o un «porque sí».</p></div></li><li><span>02</span><div><h3>Dale tu toque personal</h3><p>Elige el sabor, las porciones y los detalles.</p></div></li><li><span>03</span><div><h3>Imagina el resultado</h3><p>Prepara una solicitud de ejemplo con tu idea.</p></div></li></ol>
+          <a class="button" href="#cotizar">Crear mi pastel ideal <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="section container gallery-section">
+      <div class="section-heading"><div><p class="eyebrow">UN POCO DE INSPIRACIÓN</p><h2>Los detalles lo son <em>todo.</em></h2></div><p>Colores, texturas y muchas ideas dulces.<br>Toca una foto para verla de cerca.</p></div>
+      <div class="gallery">
+        <button type="button" class="gallery-item gallery-tall" data-image="assets/frutos-rojos.jpg" data-caption="Tartas de frutos rojos · Fotografía de referencia"><img src="assets/frutos-rojos.jpg" alt="Ampliar fotografía de tartas de frutos rojos" width="900" height="1100" loading="lazy"><span>Un toque de color <b aria-hidden="true">↗</b></span></button>
+        <button type="button" class="gallery-item" data-image="assets/cupcakes.jpg" data-caption="Cupcakes con crema rosa · Fotografía de referencia"><img src="assets/cupcakes.jpg" alt="Ampliar fotografía de cupcakes con crema rosa" width="900" height="650" loading="lazy"><span>Pequeñas delicias <b aria-hidden="true">↗</b></span></button>
+        <button type="button" class="gallery-item" data-image="assets/vainilla.jpg" data-caption="Postres en vaso con fresas · Fotografía de referencia"><img src="assets/vainilla.jpg" alt="Ampliar fotografía de postres en vaso con fresas" width="800" height="650" loading="lazy"><span>Dulces sobremesas <b aria-hidden="true">↗</b></span></button>
+        <button type="button" class="gallery-item gallery-wide" data-image="assets/detalles.jpg" data-caption="Cupcakes con chispas de colores · Fotografía de referencia"><img src="assets/detalles.jpg" alt="Ampliar fotografía de cupcakes con chispas de colores" width="900" height="500" loading="lazy"><span>La alegría está en los detalles <b aria-hidden="true">↗</b></span></button>
+      </div>
+      <p class="fine-print">Galería de inspiración con imágenes de Unsplash. No representa trabajos realizados por Dulce Arte.</p>
+    </section>
+
+    <section id="cotizar" class="quote-section">
+      <div class="container quote-grid">
+        <div class="quote-copy"><p class="eyebrow">TODO EMPIEZA CON UNA IDEA</p><h2>Hagamos algo<br><em>delicioso.</em></h2><p>Cuéntanos cómo imaginas tu celebración y prepara tu solicitud de cotización.</p><div class="demo-notice"><span aria-hidden="true">✧</span><div><strong>Probemos la idea.</strong><p>Este formulario es una demostración. No envía datos, no confirma pedidos ni procesa pagos. Usa información de ejemplo.</p></div></div><p class="quote-footnote">Sin registros. Sin prisas.<br>Solo espacio para tu imaginación.</p></div>
+        <form id="quote-form" class="quote-form">
+          <div class="form-heading"><h3>Tu próximo momento dulce</h3><span>DEMO</span></div>
+          <div class="form-grid">
+            <label>Nombre de ejemplo <span>*</span><input name="name" autocomplete="off" maxlength="80" placeholder="Ej. Alex" required></label>
+            <label>¿Qué celebramos? <span>*</span><select name="occasion" required><option value="">Elige una ocasión</option><option>Cumpleaños</option><option>Boda</option><option>Aniversario</option><option>Un antojo especial</option><option>Otra celebración</option></select></label>
+            <label>Fecha aproximada <span>*</span><input name="date" type="date" required></label>
+            <label>Personas <span>*</span><input name="guests" type="number" min="4" max="200" step="1" placeholder="Ej. 12" required></label>
+            <label class="full-width">Tu inspiración <span>*</span><select id="product-select" name="product" required><option value="personalizado">Un diseño personalizado</option></select></label>
+            <label class="full-width">Cuéntanos tu idea <span class="optional">(opcional)</span><textarea name="details" rows="3" maxlength="1000" placeholder="Sabores, colores, temática… ¡la imaginación es bienvenida!"></textarea></label>
+          </div>
+          <label class="check-label"><input type="checkbox" name="demo" required><span>Entiendo que es una demo y que no se realizará ningún pedido. <span>*</span></span></label>
+          <button class="button form-submit" type="submit">Preparar cotización de ejemplo <span aria-hidden="true">↗</span></button>
+          <p class="fine-print">* Campos obligatorios. La información solo se usa en esta página.</p>
+          <section id="quote-result" class="quote-result" aria-labelledby="result-heading" hidden tabindex="-1"><h3 id="result-heading">Tu idea ya tiene forma.</h3><p>Resumen de demostración. No se ha enviado ninguna solicitud.</p><pre id="quote-summary"></pre><div class="result-actions"><button type="button" id="download-quote" class="button button-small">Descargar resumen ↓</button><button type="button" class="text-link" id="quote-whatsapp">Continuar por WhatsApp ↗</button></div><p class="fine-print">Si WhatsApp está configurado, este botón comparte el resumen con ese servicio y abre un borrador. Tú decides si lo envías.</p><p id="quote-feedback" role="status"></p></section>
+        </form>
+      </div>
+    </section>
+    <noscript><style>#quote-form,.whatsapp-float{display:none}</style><p class="container">El cotizador y WhatsApp requieren JavaScript. Esta demo no recibe pedidos.</p></noscript>
+  </main>
+  <footer class="footer"><div class="container footer-top"><a class="brand" href="#inicio"><span class="brand-icon" aria-hidden="true">✳</span><span>Dulce Arte<small>UN CONCEPTO PARA CELEBRAR</small></span></a><p>Un poquito de dulzura.<br>Mucho por imaginar.</p><a class="text-link" href="#inicio">Volver arriba ↑</a></div><div class="container footer-bottom"><p>© <span id="year">2026</span> Dulce Arte · Proyecto ficticio de portafolio.</p><p>Fotografías de referencia: <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer">Unsplash</a> · Sin ventas ni pedidos reales.</p></div></footer>
+  <button class="whatsapp-float" id="whatsapp-button" type="button" aria-label="Consultar por WhatsApp, demo configurable"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.7 7.4L3 20.5l1.4-4.6a8.5 8.5 0 1 1 16.1-4.2Z" stroke="currentColor" stroke-width="1.6"/><path d="M8 7.5c-.8.4-.8 1.4-.4 2.5 1 2.5 3 4.5 5.5 5.3 1.1.4 2 .2 2.6-.7l.4-.8-2.6-1.3-.9 1c-1.4-.6-2.4-1.6-3-2.8l.9-.9L9.2 7.3 8 7.5Z" fill="currentColor"/></svg><span>Hablemos</span><small>DEMO</small></button>
+  <dialog id="photo-dialog" class="photo-dialog" aria-labelledby="photo-caption"><button type="button" class="dialog-close" aria-label="Cerrar fotografía">×</button><img id="lightbox-image" src="assets/hero.jpg" alt=""><p id="photo-caption"></p></dialog>
+  <dialog id="whatsapp-dialog" class="info-dialog" aria-labelledby="whatsapp-title"><button type="button" class="dialog-close" aria-label="Cerrar aviso">×</button><span class="dialog-flower" aria-hidden="true">✳</span><h2 id="whatsapp-title">Aquí comienza<br>una conversación.</h2><p>WhatsApp está en modo demostración. No hay un número configurado y no se enviará ningún mensaje.</p><p>Mientras tanto, puedes preparar y descargar una solicitud de ejemplo.</p><a class="button" id="go-to-quote" href="#cotizar">Probar el cotizador ↗</a></dialog>
+</body>
+</html>
